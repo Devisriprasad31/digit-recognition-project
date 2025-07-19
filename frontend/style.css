@@ -1,0 +1,86 @@
+/* Apply Background Image */
+body {
+    background: url("C:/Users/devis/OneDrive/Desktop/Handwritten_Digit_Recognition/frontend/images/background_image.jpeg") no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Main Container */
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 550px;
+    width: 90%;
+}
+
+/* Upload Box */
+.upload-box {
+    background: yellow;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* File Input */
+.file-input {
+    flex: 1;
+    padding: 8px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Upload Button */
+.upload-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+/* Hover Effect */
+.upload-btn:hover {
+    background: #0056b3;
+}
+
+/* Result Section */
+.result-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Uploaded Image & Prediction Box */
+.image-box, .prediction-box {
+    width: 48%;
+    padding: 10px;
+    background: orange;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.image-box img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Predicted Number */
+.prediction-box p {
+    font-size: 50px;
+    font-weight: bold;
+    color: #007bff;
+}
