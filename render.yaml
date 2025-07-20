@@ -1,7 +1,9 @@
 services:
   - type: web
-    name: digit-recognition-app
+    name: digit-recognition
     env: python
     plan: free
-    buildCommand: ""
-    startCommand: gunicorn backend.app:app
+    region: oregon
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    pythonVersion: 3.10.13
