@@ -1,9 +1,8 @@
 services:
   - type: web
     name: digit-recognition-app
-    env: python
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "gunicorn app:app"
-    envVars:
-      - key: PYTHON_VERSION
-        value: 3.10
+    env: docker
+    plan: free
+    repo: https://github.com/Devisriprasad31/digit-recognition-project
+    branch: main
+    autoDeploy: true
